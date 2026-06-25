@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>行政工作台</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Microsoft YaHei",sans-serif;
+}
+
+body{
+background:#0b1120;
+color:white;
+display:flex;
+height:100vh;
+}
+
+.sidebar{
+width:240px;
+background:#111827;
+padding:20px;
+border-right:1px solid #1f2937;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+margin-bottom:40px;
+}
+
+.menu{
+list-style:none;
+}
+
+.menu li{
+padding:14px;
+margin-bottom:10px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.menu li:hover{
+background:#1e293b;
+}
+
+.main{
+flex:1;
+padding:30px;
+overflow:auto;
+}
+
+.header{
+margin-bottom:30px;
+}
+
+.header h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-bottom:30px;
+}
+
+.card{
+background:#111827;
+padding:20px;
+border-radius:16px;
+border:1px solid #1f2937;
+}
+
+.card h3{
+font-size:14px;
+color:#94a3b8;
+}
+
+.card p{
+font-size:32px;
+margin-top:10px;
+}
+
+.content{
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:20px;
+}
+
+.panel{
+background:#111827;
+padding:20px;
+border-radius:16px;
+border:1px solid #1f2937;
+}
+
+.panel h2{
+margin-bottom:20px;
+}
+
+.todo-item{
+padding:12px;
+border-bottom:1px solid #1f2937;
+}
+
+.quick-btn{
+display:block;
+width:100%;
+padding:12px;
+margin-bottom:12px;
+background:#2563eb;
+border:none;
+border-radius:10px;
+color:white;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+行政工作台
+</div>
+
+<ul class="menu">
+<li>🏠 首页</li>
+<li>📋 今日待办</li>
+<li>📦 物资管理</li>
+<li>👥 访客登记</li>
+<li>📬 快递收发</li>
+<li>📅 会议室</li>
+<li>🚗 车辆管理</li>
+<li>💻 资产管理</li>
+<li>📢 公告通知</li>
+<li>📊 数据报表</li>
+<li>⚙️ 系统设置</li>
+</ul>
+
+</div>
+
+<div class="main">
+
+<div class="header">
+<h1>欢迎回来 👋</h1>
+<p>高效 · 协同 · 管理</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>今日待办</h3>
+<p>8</p>
+</div>
+
+<div class="card">
+<h3>物资库存</h3>
+<p>128</p>
+</div>
+
+<div class="card">
+<h3>今日访客</h3>
+<p>5</p>
+</div>
+
+<div class="card">
+<h3>待领快递</h3>
+<p>3</p>
+</div>
+
+</div>
+
+<div class="content">
+
+<div class="panel">
+<h2>今日待办</h2>
+
+<div class="todo-item">办公用品采购申请</div>
+<div class="todo-item">新员工入职准备</div>
+<div class="todo-item">会议室确认</div>
+<div class="todo-item">快递签收</div>
+
+</div>
+
+<div class="panel">
+
+<h2>快捷入口</h2>
+
+<button class="quick-btn">访客登记</button>
+<button class="quick-btn">物资申请</button>
+<button class="quick-btn">会议室预约</button>
+<button class="quick-btn">快递登记</button>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
